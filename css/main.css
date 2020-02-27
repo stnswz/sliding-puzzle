@@ -1,0 +1,165 @@
+@import url('https://fonts.googleapis.com/css?family=Montserrat:500&display=swap');
+
+body {
+    margin: 0%;
+    padding: 0%;
+    margin-top: 0px;
+    color:#fff;
+    background-color: #222;
+}
+#mainContainer {
+	font-family: Montserrat, Arial, sans-serif;
+    border: 0px solid;
+    width: 1280px;
+    height: 852px;
+    box-sizing: border-box;
+    margin: 20px auto;
+    position: relative;
+    background-color: #444;
+    border: 1px solid #666;
+    box-shadow: 0px 0px 20px 0px rgba(255,255,255,0.25);
+}
+#timeField {
+    position: absolute;
+    top: 20px;
+    left: 20px;
+    width: 401px;
+    height: 140px;
+    box-shadow: 0px 0px 20px 0px rgba(0,0,0,0.5);
+    background: url(./img/TimeField.png) no-repeat left top;
+}
+#timeField #eggClock {
+    width: 68px;
+    height: 103px;
+    position: absolute;
+    top: 19px;
+    left: 62px;
+    background: url(./img/Clock1.png) no-repeat left top;
+}
+
+#timeField #timeCount {
+    width: 50px;
+    height: 30px;
+    position: absolute;
+    top: 80px;
+    left: 167px;
+    font-size: 34px;
+    font-weight: 500;
+    color: #fff;
+    letter-spacing: 2px;
+}
+#timeField #min {
+    width: 50px;
+    height: 30px;
+    position: absolute;
+    top: 80px;
+    left: 254px;
+    font-size: 34px;
+    font-weight: 500;
+    color: #fff;
+}
+
+.shuffleButton, .shuffleButtonOver {
+    position: absolute;
+    left: 20px;
+    top: 185px;
+    width: 401px;
+    height: 140px;
+    box-shadow: 0px 0px 20px 0px rgba(0,0,0,0.5);
+    background: url(./img/ShuffleButton.png) no-repeat left top;
+    cursor:pointer;
+}
+.shuffleButton:hover {
+    background: url(./img/ShuffleButtonOver.png) no-repeat left top;
+    box-shadow: 0px 0px 20px 0px rgba(0,0,0,0.7);
+}
+.shuffleButtonOver {
+    background: url(./img/ShuffleButtonOver.png) no-repeat left top;
+    box-shadow: 0px 0px 20px 0px rgba(0,0,0,0.7);
+}
+
+#makeItText {
+    position: absolute;
+    left: 110px;
+    top: 455px;
+    width:186px;
+    height:189px;
+    background: url(./img/MakeItText.png) no-repeat left top;
+}
+
+#puzzleContainer {
+    width: 810px;
+    height: 810px;
+    position: absolute;
+    top: 20px;
+    right: 20px;
+    background: url(./img/TilesBackground.jpg) no-repeat left top;
+    box-shadow: 0px 0px 20px 0px rgba(0,0,0,0.75);
+}
+#puzzleContainer .tile {
+    width: 270px;
+    height: 270px;
+    position: absolute;
+}
+
+#puzzleContainer #startButton {
+    width: 810px;
+    height: 810px;
+    position: absolute;
+    right: 0px;
+    top: 0px;
+    background: url(./img/StartButton.png) no-repeat left top;
+    background-color: rgba(0,0,0, 0.5);
+    z-index: 10;
+    display:none;
+    cursor:pointer;
+}
+
+#winScreen {
+    box-sizing: border-box;
+    width: 810px;
+    height: 810px;
+    position: absolute;
+    right: 0px;
+    top: 0px;
+    padding: 50px;
+    padding-top:200px;
+    text-align: center;
+    color: #fff;
+    font-size: 55px;
+    background-color: rgba(0,0,0, 0.5);
+    box-shadow: 0px 0px 20px 0px rgba(0,0,0,0.1);
+    z-index: 11;
+    display:none;
+}
+#winScreen .small, #looseScreen .small {
+    font-size: 45px;
+}
+#looseScreen {
+    box-sizing: border-box;
+    width: 810px;
+    height: 810px;
+    position: absolute;
+    right: 0px;
+    top: 0px;
+    padding: 50px;
+    padding-top:200px;
+    text-align: center;
+    color: #fff;
+    font-size: 55px;
+    background-color: rgba(0,0,0, 0.5);
+    box-shadow: 0px 0px 20px 0px rgba(0,0,0,0.1);
+    z-index: 12;
+    display:none;
+}
+
+#output {
+    box-sizing: border-box;
+    width: 370px;
+    height: 290px;
+    padding: 10px;
+    position: absolute;
+    background-color: #ccc;
+    left: 0px;
+    top: 500px;
+}

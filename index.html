@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>
+            Make the Cake!
+        </title>
+        <link rel="stylesheet" href="./css/main.css">
+    </head>
+
+    <body onload="matchWindowSize();">
+
+        <div id="mainContainer">
+
+            <div id="timeField">
+                <div id="eggClock"></div>
+                <div id="timeCount">0:00</div>
+                <div id="min">min</div>
+            </div>
+
+            <div id="shuffleButton" class="shuffleButton" onclick="shuffleButtonClick();">
+            </div>
+
+            <div id="makeItText">
+            </div>
+
+            <div id="puzzleContainer">
+                <div id="startButton" onclick="startButtonClick();" />
+
+                <!-- https://api.jquery.com/data/ -->
+                <!--
+                <div id="tile0" class="tile" style="left:0px; top:0px; background: url(../images/puzzleslices_01.png) no-repeat left top;"></div>
+                <div id="tile_1" class="tile" style="left:270px; top:0px; background: url(../images/puzzleslices_02.png) no-repeat left top;"></div>
+                <div id="tile_2" class="tile" style="left:540px; top:0px; background: url(../images/puzzleslices_03.png) no-repeat left top;"></div>
+                -->
+            </div>
+
+            <div id="winScreen">
+                You made it! <br>
+                <span class="small">Just in <span id="winTimeSpan">0:00</span> minutes!</span>
+                <br><br>
+                Try again!
+            </div>
+
+            <div id="looseScreen">
+                <span class="small">It's too bad!</span><br>
+                Time is over...<br><br>
+                Try again!<br>
+            </div>
+
+        </div>
+
+        <script src="./js/jquery/jquery-3.4.1.js"></script>
+        <script src="./js/Clock.js"></script>
+        <script src="./js/Blink.js"></script>
+        <script src="./js/App.js"></script>
+        <script src="./js/Resize.js"></script>
+    </body>
+
+</html>
